@@ -1,0 +1,382 @@
+
+1. When using services, each component will make its own independent instance of the service.
+
+ True
+
+ False
+
+ans.
+False
+
+2.What is the design language library we used to make use of a modal?
+
+ans. The design language library commonly used to make use of a modal is Bootstrap.
+
+3.Functions are added to the call stack from the event queue only when
+
+the setTimeout delay has expired
+
+		
+the call stack is empty
+
+		
+the event loop is empty
+
+		
+the event queue is full
+
+
+Ans. Functions are added to the call stack from the event queue only when the call stack is empty.
+
+
+4. What file controls the name, theme colour and icons that your PWA will present when added to a device?
+
+		
+app.module.ts
+
+		
+manifest.webmanifest
+
+		
+index.html
+
+		
+ngsw-config.json
+
+Ans. The file that controls the name, theme color, and icons presented when a Progressive Web App (PWA) is added to a device is the manifest.webmanifest.
+
+5.EventEmitters can't be set to emit a specific type of data.
+
+ True
+
+ False
+
+Ans. False. 
+
+6.In our routing path definitions, what pattern do we use to capture any possible page the user might visit?
+Ans. In routing path definitions, we use the wildcard pattern '**' to capture any possible page the user might visit. This wildcard pattern matches any URL segment not matched by previous routes.
+
+7 Angular applications require Node.js in order to run.
+
+ True
+
+ False
+Ans. False. 
+
+
+8. In order to use http calls in our components, where do we need to include the HttpClientModule?
+
+At the top of each component
+
+		
+Only in our package.json
+
+		
+declarations array of app.module.ts
+
+		
+imports array of app.module.ts
+
+Ans.
+imports array of app.module.ts
+
+9.We don't need to use HttpHeaders in our http get requests.
+
+ True
+
+ False
+Ans. False
+
+10. PWAs are a replacement Single Page Application architecture.
+
+ True
+
+ False
+
+Ans. False
+
+
+11. Resolved promises run after the next event loop starts
+
+ True
+
+ False
+
+Ans. False
+
+12. An http post request returns an observable.
+
+ True
+
+ False
+Ans. True
+
+13. In reference to Assignment 6, the MessageService that was added to your project is:
+
+		
+A standard Angular component that is built into the framework.
+
+		
+A standard Angular service that is built into the framework.
+
+		
+A standard Typescript service that is built into the framework.
+
+		
+None of the above
+
+Ans. None of the above. 
+
+14. Observables are an extension of the Angular Promises library
+
+ True
+
+ False
+Ans. False
+
+15. To inject our service into a component, we add it as a parameter to which of the following?
+
+		
+ngOnDestroy
+
+		
+Destructor
+
+		
+Constructor
+
+		
+ngOnInit
+
+Ans.  constructor.
+
+16. What enables us to use service injection and create only 1 instance of the service when running our application  (select all that apply)?
+
+		
+Injectable decorator
+
+		
+Input decorator
+
+		
+Root injection
+
+		
+Dependency injection
+
+Ans.
+
+The options that enable us to use service injection and create only one instance of the service when running our application are:
+
+Injectable decorator
+Root injection
+Dependency injection
+
+
+17. Observables and promises are the same thing
+
+ True
+
+ False
+
+Ans. False
+
+
+18. What type is returned by the following code?
+
+return this.http.get<Content[]>("api/content");
+
+		
+Content
+
+		
+Observable wrapper around Content
+
+		
+Observable wrapper around a Content array
+
+		
+Content array
+
+Ans. Observable wrapper around a Content array
+
+
+19.Given the following routes, which component will be displayed in the <router-outlet></router-outlet> if you navigate to localhost:4200/content/75
+
+export const routeConfig:Routes = [
+    {
+        path: "**",
+        component: PageNotFoundComponent
+    },
+    {
+        path: "",
+        component: Home
+    },
+    {
+        path: "/ContentList",
+        component: ContentListComponent
+    },
+    {    path: "content/:id", 
+         component:ContentDetailComponent
+    },
+];
+
+		
+ContentListComponent
+
+		
+PageNotFoundComponent
+
+		
+ContentDetailComponent
+
+		
+Home
+
+Ans. ContentDetailComponent
+
+
+20. Which of the following are valid components in material?
+
+		
+Tabs
+
+		
+List
+
+		
+Grid List
+
+		
+Tree
+Ans. Tabs, List,Grid List,Tree
+
+21. The Angular http client is a built-in HTTP client of the Angular framework.
+
+ True
+
+ False
+Ans. True
+
+22. Which of the following services do we use to acquire route parameters in our components?
+
+		
+RouterOutlet
+
+		
+RouteParameter
+
+		
+ActivatedRoute
+
+		
+RouterLink
+
+Ans. ActivatedRoute 
+
+23. What code will run last?
+
+		
+An if statement
+
+		
+a setTimeout call
+
+		
+A resolving promise
+
+		
+A console log
+
+Ans. A setTimeout call
+
+24. In Angular, services are required because components do not allow for data access.
+
+ True
+
+ False
+
+Ans. False. 
+
+25. To run our PWA locally, we can no longer use the "ng serve" command.
+
+ True
+
+ False
+
+Ans.False. 
+
+
+26. How many colours must we specify when creating our own custom theme?
+
+		
+0
+
+		
+5
+
+		
+4
+
+		
+3
+
+Ans. 4
+
+27. In order to setup routing, we must initialize a router module definitions in the app component.
+
+ True
+
+ False
+
+Ans. False.
+
+28. When implementing the Angular InMemoryDbService the following method must be implemented:
+
+		
+constructor()
+
+		
+createDb()
+		
+ngOnInit()
+
+		
+imports()
+
+Ans.  createDb() 
+
+
+
+29. PWA stands for
+
+		
+Progressive Web App
+
+		
+Progressive Web Architecture
+
+		
+Partially Web App
+
+		
+Progressive Work App
+
+Ans. Progressive Web App.
+
+
+30. One advantage of Async/Await over promises is
+
+		
+it executes code faster than using promises
+
+		
+it executes code slower than using promises
+
+		
+you can make asynchronous code that looks similar to synchronous code
+
+		
+it uses less resources which is good for mobile browsers
+
+Ans.  you can make asynchronous code that looks similar to synchronous code
