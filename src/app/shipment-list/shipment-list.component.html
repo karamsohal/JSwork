@@ -1,0 +1,7 @@
+<app-dialog (newItem) = "addItem($event)"></app-dialog>
+<div *ngFor="let ship of shipmentList">
+    <p>ID: {{ship.id}}</p>
+    <p>From: {{ship.fromAddress}}</p>
+    <p>To: {{ship.toAddress}}</p>
+    <p>Weight: {{ship.weight}}</p>
+</div>

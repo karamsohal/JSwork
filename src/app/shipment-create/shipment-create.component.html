@@ -1,0 +1,24 @@
+<form>
+    <mat-dialog-content>
+        <mat-form-field>
+            <mat-label>id</mat-label>
+            <input matInput type="number" name="id" [(ngModel)]="ship.id">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>form address</mat-label>
+            <input matInput type="text" name="fromAddress" [(ngModel)]="ship.fromAddress">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>to address:</mat-label>
+            <input matInput type="text" name="toAddress" [(ngModel)]="ship.toAddress">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>weight:</mat-label>
+            <input matInput type="text" name="weight" [(ngModel)]="ship.weight">
+        </mat-form-field>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+        <button mat-button (click)="onNoClick()">Cancel</button>
+        <button mat-raised-button  [mat-dialog-close]="ship">Add</button>
+    </mat-dialog-actions>
+</form>
